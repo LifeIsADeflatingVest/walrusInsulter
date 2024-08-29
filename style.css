@@ -1,0 +1,139 @@
+body, html {
+  margin:0;
+  padding:0;
+  background-color:black;
+  color:lightgray;
+  text-align:center;
+}
+h1, h2, h3 {
+  font-family: "Matemasie", sans-serif;
+}
+p {
+  font-size:1.3em;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  font-size: 0.9em;
+  color:limegreen;
+}
+a:visited {
+  color:hotpink;
+}
+img {
+  max-width:100%;
+  max-height:350px;
+}
+#container {
+  width:50%;
+  margin:0 auto;
+  padding: 0.5em;
+  box-sizing:border-box;
+  display:none;
+}
+#wiseAss {
+  border: 0.2em solid gray;
+  border-radius: 0.6em;
+  height: 2em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top:-30px;
+  padding: 0.8em;
+  box-sizing: border-box;
+  transition: height 0.7s;
+  background: url('pap.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  align-content: center;
+}
+#wiseAss p {
+  width: 70%;
+  margin: 0 auto;
+  text-align:justify;
+}
+#walrusLink {
+  opacity: 0;
+}
+#again {
+  opacity: 0;
+  margin-top: 3em;
+  padding: 1em;
+  border-radius: 0.6em;
+  background-color: #242424;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: none;
+  color:ghostwhite;
+  animation: none;
+}
+#again:hover {
+  animation: hoverAnimation 0.3s forwards;
+}
+@keyframes hoverAnimation {
+  0% {
+    scale: 1;
+    box-shadow: 0 0 ghostwhite;
+  }
+  30% {
+    scale: 0.95;
+  }
+  70% {
+    scale: 1.15;
+  }
+  100% {
+    scale: 1.05;
+    box-shadow: 0 0 1em 0 ghostwhite;
+  }
+}
+#footer {
+	text-align: center;
+	width: 50%;
+	margin: 1.5em auto;
+    display:none;
+}
+#footer p {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1281px) {
+  p {
+    font-size:1.2em;
+  }
+  img {
+    max-height: 200px;
+  }
+  #container {
+    width: 75%;
+  }
+  #again {
+    margin-top:1em;
+    font-size:1.2em;
+    padding: 0.3em;
+  }
+  #wiseAss {
+    padding: 0.3em;
+    margin: 0 auto;
+    margin-top: -15px;
+    width: 50%;
+  }
+  #wiseAss p {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+  #wiseAss {
+    width:90%;
+  }
+  #wiseAss p {
+    width: 100%;
+    text-align: center;
+  }
+  #again {
+    font-size:1em;
+  }
+}
+
